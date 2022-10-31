@@ -20,8 +20,8 @@ https://dev.to/harrsh2124/how-to-setup-firefox-developer-edition-on-ubuntu-4inp
 
 
 ## 4. Features
-Lo primero es eliminar restos de instalacino de firefox developer edition. 
-Tambien se abre y se pinea a la taskbar para poder acceder con mas facilidad. 
+Lo primero es eliminar restos de instalacino de firefox developer edition.
+Tambien se abre y se pinea a la taskbar para poder acceder con mas facilidad.
 En la pagina principal de firefox developer edition se puede ver todas las caracerisricas y novedades de esta version de desarrollador
 
 ## 5. Developer Tools
@@ -38,11 +38,11 @@ La seccion de **Red** permite encontrar las peticiones que se van realizando al 
 
 Posteriormente sigue el **Editor de estilos** es un elemento interesante ya que permite revisar los estilos a detalle segun su fuente, tambien clickeando en el simbolo de + debado de inspector es posible crear una nueva hoja de estilos que se aplica en tiempo real, la cual puede ser tambien descargada posteriormente.
 
-Las secciones posteriores de Rendimiento, Memoria, Almacenamiento, Accesibilidad y Aplicacion sons eccion que pertenecen mayormente al backend por lo que en este curso no se van a tratar. 
+Las secciones posteriores de Rendimiento, Memoria, Almacenamiento, Accesibilidad y Aplicacion sons eccion que pertenecen mayormente al backend por lo que en este curso no se van a tratar.
 
 El modo de diseño responsive ctrl+shift+M que se puede ver en la parte superior derecha de developer tools como un icono de pantallas, permite ingresar a una vista de smartphone o tablet, en la parte superior se peude escoger el tipo de pantalla, si es de un dispositivo especifico o si se configura un tamaño de pantalla personalizado, puede seleccionarse un laptop y en la opcion de editar lista se puede agregar o quiotar dispositivos.
 
-La resolucion es muy importante ya que en el diseño web responsivo se tienen varios tamaños de imagenes, smartphones, tablets, laptops, todas con diferentes resoluciones. 
+La resolucion es muy importante ya que en el diseño web responsivo se tienen varios tamaños de imagenes, smartphones, tablets, laptops, todas con diferentes resoluciones.
 En una seccion del curso se va a hablar de las media queries que permite agergar puntos de quiebre para cada tamaño de resolucion, y basicamente cubre cada una de las resoluciones y para cubrirlo solo se necesita saber los puntos de quiebre para cada resolucion usando los media query
 
 En la parte suyperior hay un icono con simbolo de llave, de ahi se despliegan otras opciones para los desarrolladores. Eyedropper o Recogecolor es una herraaienta que permite obtener el codigo html del color en donde se posa el mouse. Codigo fuente de la pagina  permite encontrar cual es elcodigo que se esta renderizando. Algunas paginas tienen codigo generado como el de typescript y se vuelve muy poco entendible. Debug remoto, consola de navegador, hay muchas herramientas que puede accederse desde ahi.
@@ -64,7 +64,7 @@ En este curso se va a usar Atom como editor de codigo. La idea es descargar e in
 ## 8. Download & Install
 La idea de usar Atom es que el curso esta diseñado con este IDE, por lo que puede que algunas funcionalidades sean solo exclusivas en este editr, pero se es libre de escoger cualquier otro editor, igual que con el navegador web.
 
-Se púede conseguir atom buscando en google, la pagina es inteligente para decidir que sistema operativo se esta usando para descargar el adecuado. 
+Se púede conseguir atom buscando en google, la pagina es inteligente para decidir que sistema operativo se esta usando para descargar el adecuado.
 
 ## 9. Open a Project
 Para abrir un proyecto en atom, basta con abrir una carpeta o un archivo, o arrastrarlo hasta el editor de codigo desde el manejador de archivos
@@ -109,10 +109,10 @@ Framework front end gratis para mas facil y mas rapido desarrollo web.
 Incluye plantillas de codigo diseñadas en HTML y CSS para tipografia, formulaios, botones, tablas, navegacion, modales, carruseles de imagenes y muchos otros plugins adicionales de javascript.
 Bootstrap da la habiliadd de crear diseños responsivos de manera sencilla.
 
-Pensar en bootstrap es pensar en comenzar en un punto de partida en donde ya se tiene un sitio responsivo, la plantilla o la estructura  el framework en el que se va a trabajar encima. 
+Pensar en bootstrap es pensar en comenzar en un punto de partida en donde ya se tiene un sitio responsivo, la plantilla o la estructura  el framework en el que se va a trabajar encima.
 Es como trabajar en una casa, se crean unos buenos cimientos y luego se crea la estructura. Bootstrap permite agregar comonentes muy facilmente en diferentes areas, en la siguiente seccion se va a hablar sobre ello.
 
-Bootstrap ademas de ser una buena manera de cimentar el sitio web, si se combina con PHP se puede convertir en un CMS como wordpress para crear contenido rapido. 
+Bootstrap ademas de ser una buena manera de cimentar el sitio web, si se combina con PHP se puede convertir en un CMS como wordpress para crear contenido rapido.
 
 
 ## 20. Get Bootstrap
@@ -149,11 +149,150 @@ Para descargar bootstrap cmo CDN basta con ir a la documentacion oficial de boot
       </body>
     </html>
 
-Usando liveserver se puede acceder al archivo que se esta editando en atom
+Usando http-server se puede acceder al archivo que se esta editando en atom
 
+    $ http-server -o
 
 
 # Seccion 5, Components
+## 22. 1-Overview
+En esta seccion se va a ver una vista previa de los componentes que se van a ver de javascript, son 35 en total.
+
+
+## 23. 2-Containers
+En esta seccion se va a hablar de los **Containers** o contenedores. Dentro de la carpeta de la seccion, se crea una nuevo archivo **components.html**.
+
+Un contenedor es usado para rellenar el contenido que esta dentro de los contenedores, hay varios tipos de contenedores. Por lo general estas clases van dentro de una etiqueta ```<div>```
+
+Fixed-width container, Fluid container, Container with different colors, Responsive containers
+
+Para usar los componentes de bootstrap siempre va a haber un nombre de clase para aplicar cierta funcionalidad. De esta manera al aplicar una o varias clases se trae el estilo del framework de bootstrap.
+
+### Fixed-width container
+Clase de bootstrap: 
+
+```class="container">```
+
+Cuando se ajusta el tamaño de la pantalla, el contenedor se ajusta con ella
+
+    <div class="container">
+      <h1>My first container</h1>
+      <p>This is text</p>
+    </div>
+
+
+### Fluid container
+Clase de bootstrap:  
+
+```class="container-fluid">```
+
+Cuando se ajusta el tamaño de la pantalla, el contenedor siempre va a tomar el 100% de la pantalla y se va a quedar fijo
+
+    <div class="container-fluid">
+      <h1>Fluid Container</h1>
+      <p>This is text</p>
+    </div>
+
+### Container with different colors
+Clases de bootstrap: 
+
+
+```class="container p-3 my-5 border">```
+
+```class="container p-4 my-4 bg-dark text-white">```
+
+```class="container p-5 my-3 bg-primary text-white">```
+
+Por lo general otras utilidades como border y color vienen con otros contenedores, entonces estas clases permiten agregar colores a los contenedores. 
+Los contenedores son usados para poner contenido dentro y son usados bastante.
+
+Se puede apreciar que border permite bordear el contenedor, diferentes colores de background y de texto. Esto es una adicion en Bootstrap 4.
+
+Tambien hay containers responsivos, pueden usar clases en las container small, medium, large, y extralarge que ermiten ajustar diferentes contenidos segun el viewport
+
+### Responsive containers
+Para los contenedores responsivos se usan unas clases que permiten cambiar el tamaño del contenido segun el tamaño del viewport
+
+```<div class="container-sm bg-primary">.container-sm</div>```
+
+```<div class="container-md bg-dark">.container-md</div>```
+
+```<div class="container-lg bg-alert">.container-lg</div>```
+
+```<div class="container-xl border">.container-xl</div>```
+
+En este momento estos contenedores no tienen contenido, pero mas adelante se va a poder ver mas informacion sobre ellos.
+
+## 24. 3-Grid Basic
+
+## 25. 4-Typography
+
+## 26. 5-Colors
+
+## 27. 6-Tables
+
+## 28. 7-Images
+
+## 29. 8-Jumbotron
+
+## 30. 9-Alerts
+
+## 31. 10-Buttons
+
+## 32. 11-Button Groups
+
+## 33. 12-Badges
+
+## 34. 13-Progress Bars
+
+## 35. 14-Spinners
+
+## 36. 15-Pagination
+
+## 37. 16-List Groups
+
+## 38. 17-Cards
+
+## 39. 18-Dropdowns
+
+## 40. 19-Collapse
+
+## 41. 20-Navs
+
+## 42. 21-Navbar
+
+## 43. 22-Forms
+
+## 44. 23-Inputs
+
+## 45. 24-Input Groups
+
+## 46. 25-Custom Forms
+
+## 47. 26-Carousel
+
+## 48. 27-Modal
+
+## 49. 28-Tooltip
+
+## 50. 29-Popover
+
+## 51. 30-Toast
+
+## 52. 31-Scrollspy
+
+## 53. 32-Utilities
+
+## 54. 33-Flex
+
+## 55. 34-Icons
+
+## 56. 35-Media Objects
+
+## 57. 36-Filters
+
+
+
 
 # Seccion 6, Grid
 
