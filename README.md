@@ -224,6 +224,17 @@ Para los contenedores responsivos se usan unas clases que permiten cambiar el ta
 En este momento estos contenedores no tienen contenido, pero mas adelante se va a poder ver mas informacion sobre ellos.
 
 ## 24. 3-Grid Basic
+En bootstrap el sistema de grid esya construido con flexbox y permite tener hasta 12 columnas en toda la pagina. Si no se quiere usar todas las 12 columnas individualmente, se pueden agrupar pára crear columnas compuestas.
+
+El sistema grid es responsive y se ajusta automaticamente dependiendo del tamaño de la pantalla. Estar seguro de que la suma llegue a 12 o a mas pocas no implica que se deban usar las 12 columnas, en bootstrap el sistema grid tiene 5 tipos de columnas:
+
+Pantallas pequelñas, con menos de 576px
+Panrallas medianas, entre 576 y 768px
+Pantallas grandes, entre 768 y 992px
+Panatallas extragrandes, mas de 
+
+
+
 
 ## 25. 4-Typography
 
