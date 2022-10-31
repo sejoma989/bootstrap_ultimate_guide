@@ -67,25 +67,91 @@ La idea de usar Atom es que el curso esta diseñado con este IDE, por lo que pue
 Se púede conseguir atom buscando en google, la pagina es inteligente para decidir que sistema operativo se esta usando para descargar el adecuado. 
 
 ## 9. Open a Project
+Para abrir un proyecto en atom, basta con abrir una carpeta o un archivo, o arrastrarlo hasta el editor de codigo desde el manejador de archivos
 
 ## 10. Version Control with GitHub
+Como ya se ha visto antes, para tener el codigo guardado en caso ed cualquier percance en la maquina local y para almacenar versiones ed codigo en la nube se usa git
 
 ## 11. Collaborate with Teletype
+Teletype es una especie de live server en VSC, permite a otros editar documentos de codigo en linea en compañia de otros estilo google docs
+
 
 ## 12. Install a Package
+Atom como cualquier otro ide permite extender funcinoalidades agregando paquetes desarrollados por terceros
 
 ## 13. Choose a Theme
+Hay varios temas en el theme picker que s epueden escoger, algunos estan en local otros hay que descargarlos
+
 
 ## 14. Hack on the Init Script
+Es posible agregar codigo al init script para personalizar la ejecucion de atom
+
 
 ## 15. Add a Snippet
+Snippets son plantillas de codigo que pueden ser agregadas y que pueden ser accedidas escribiendo una palabra clave y luego dando tab
+
 
 ## 16. Keyboard Shortcuts
+ctr+shift+p permite acceder a todos los comandos de shortcuts
+
 
 ## 17. Summary
+En esta seccion se habla sobre atom
 
 
 # Seccion 4, get started
+## 18. Overview
+En esta seccion se va a aprender que es bootstrap, como obtenerlo y descargarlo para configurar sus archivos
+
+
+## 19. What is Bootstrap
+Framework front end gratis para mas facil y mas rapido desarrollo web.
+Incluye plantillas de codigo diseñadas en HTML y CSS para tipografia, formulaios, botones, tablas, navegacion, modales, carruseles de imagenes y muchos otros plugins adicionales de javascript.
+Bootstrap da la habiliadd de crear diseños responsivos de manera sencilla.
+
+Pensar en bootstrap es pensar en comenzar en un punto de partida en donde ya se tiene un sitio responsivo, la plantilla o la estructura  el framework en el que se va a trabajar encima. 
+Es como trabajar en una casa, se crean unos buenos cimientos y luego se crea la estructura. Bootstrap permite agregar comonentes muy facilmente en diferentes areas, en la siguiente seccion se va a hablar sobre ello.
+
+Bootstrap ademas de ser una buena manera de cimentar el sitio web, si se combina con PHP se puede convertir en un CMS como wordpress para crear contenido rapido. 
+
+
+## 20. Get Bootstrap
+Se puede descargar bootstrap yendo a getbootstrap.com y descargandolo. Pero en esta ocasion se va a descargar como CDN o content delivery network. Alguien eta hosteando esos archivos a los cuales yo me conecto usando un link para poder usar esos archivos. Es posible usar bootstrap como CDN, en la documentacion
+
+https://getbootstrap.com/docs/4.0/getting-started/introduction/
+
+indica como crear el starter template, este se puede copiar dentro de un archvo html y permite generar una primer plantilla en bootstrap. Toda la carpeta con los codigos se ha descargado, pero esta solo como referencia.
+
+
+## 21. Download and Setup Files
+Para descargar bootstrap cmo CDN basta con ir a la documentacion oficial de bootstrap, crear el starter template y comenzar a crear los componentes que se van a ver en la proxima seccion
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>Hello, world!</title>
+      </head>
+      <body>
+        <h1>Hello, world!</h1>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </body>
+    </html>
+
+Usando liveserver se puede acceder al archivo que se esta editando en atom
+
+
 
 # Seccion 5, Components
 
