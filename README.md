@@ -471,6 +471,30 @@ La clase .img-fluid permite un comportamiento responsivo pero sin el borde minia
     class="img-fluid" 
 
 ## 29. 8-Jumbotron
+Es un tipo de componente que permite mostrar contenido en estilo de unidad de heroe. Es util y flexible que permite extenderse por todo el viewport para mostrar mensajes de informacion de marketing clave para el sitio. Hay dos estilos principales, ocupando el mismo tamaño de los otros elementos
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+    </div>
+
+O haciendo que ocupe todo el tamaño de viewport disponible
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+
 
 ## 30. 9-Alerts
 
