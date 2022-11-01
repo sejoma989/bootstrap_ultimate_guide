@@ -388,8 +388,87 @@ Las clases contextuales permiten agregar estilos en conjunto con otras y tambien
 Tambien se pueden usar para botones, fondos, etc. Las clases contextuales se usan para crear colores representativos e importantes.
 
 ## 27. 6-Tables
+Las tablas en bootstrap tienen varios estilos y atributos, el mas basico es cuando a la tabla se le da la clase **.table**. Luego se crea una tabla normal, es opcional darle el scope a las columnas, pero es lo recomendado
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+Se puede aplicar la clase table-dark junto con .table con el fin de darle el tema oscuro
+
+    <table class="table table-dark">
+
+Tambien es posible aplicar un estilo slo al cabecero thad
+
+      <thead class="thead-light">
+
+Asi como aplicar un estilo de cebras a los elementos de fila tr
+
+    <table class="table table-striped">
+
+Se puede aplicar un estilo que permita ver el comportamiento del hover del mouse
+
+    <table class="table table-hover table-dark">
+
+Se pueden ver mas usos de las tablas y sus estilos en la documentacion
+
+https://getbootstrap.com/docs/4.0/content/tables/
 
 ## 28. 7-Images
+Hay varias cosas que se le pueden hacer a las imagenes en bootstrap. Se puede agregar un redndeo a las esqionmnas, se puede usar una clase que moldee la imagen dentro de un circulo o tambien se puede usar una clase thumbnail que permite volver la imagen mimiatura con un borde miniatura.
+
+Se trae una imagen de google y se copia su link
+
+https://images.squarespace-cdn.com/content/v1/5bba5251a9ab9576241f7fc1/1558468503069-X8TOFD0EWZIVSZM4MZ9F/cat-4110342_1920.jpg?format=1500w
+
+### Borde redondeado
+
+Le da a la imagen un leve borde redondeado
+
+    class="rounded"
+
+### Imagen moldeada en un circulo
+
+Encierra a la imagen en un circulo haciendo la imagen de forma ovalada
+
+    class="rounded-circle"
+
+### Version miniatura de la imagen
+
+Encierra a la imagen en un borde miniatura, ademas de que la vuelve  su version miniatura. Funciona de manera responsiva y permite que se adapte al tamaño de la pantalla
+
+    class="img-thumbnail"
+
+La clase .img-fluid permite un comportamiento responsivo pero sin el borde miniatura
+
+    class="img-fluid" 
 
 ## 29. 8-Jumbotron
 
