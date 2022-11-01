@@ -226,13 +226,90 @@ En este momento estos contenedores no tienen contenido, pero mas adelante se va 
 ## 24. 3-Grid Basic
 En bootstrap el sistema de grid esya construido con flexbox y permite tener hasta 12 columnas en toda la pagina. Si no se quiere usar todas las 12 columnas individualmente, se pueden agrupar pára crear columnas compuestas.
 
-El sistema grid es responsive y se ajusta automaticamente dependiendo del tamaño de la pantalla. Estar seguro de que la suma llegue a 12 o a mas pocas no implica que se deban usar las 12 columnas, en bootstrap el sistema grid tiene 5 tipos de columnas:
+El sistema grid es responsive y se ajusta automaticamente dependiendo del tamaño de la pantalla. Estar seguro de que la suma llegue a 12 o a mas pocas no implica que se deban usar las 12 columnas
 
-Pantallas pequelñas, con menos de 576px
-Panrallas medianas, entre 576 y 768px
-Pantallas grandes, entre 768 y 992px
-Panatallas extragrandes, mas de 
+En bootstrap el sistema grid tiene 5 tipos de columnas:
 
+Pantallas extrapequeñas, ancho de pantallas menor a  576 pixeles.
+
+      <div class="col-3">.col-3</div>
+
+Pantallas pequelñas, ancho de pantallas igual o mayor a  576px 
+
+      <div class="col-sm-3">.col-sm-3</div>
+
+Panrallas medianas, iancho de pantallas igual o mayor a 768px
+
+      <div class="col-md-3">.col-md-3</div>
+
+Pantallas grandes, ancho de pantallas igual o mayor a  992px
+
+      <div class="col-lg-3">.col-lg-3</div>
+
+Panatallas extragrandes, ancho de pantallas igual o mayor a 1200px 
+
+      <div class="col-xl-3">.col-xl-3</div>
+
+Las clases descritas anteriormente pueden ser combinadas para crear diseños mas dinamicos y flexibles basados en la estructura basica de bootstrap para grid. Anteriormente se muestra la construccion de 4 columnas organizadas de a 3 elementos para un total de 12 en una sola fila, en los diferentes tamaños de la patnalla.
+
+La filosofia de bootstrap es crear elementos y trabajar con filas y columnas, por lo que se hace mas facil crear la responsividad. Para las pantallas pequeñas
+
+    <div class="row">
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+    </div>
+
+Este es el codigo que se va a mostrar en linea en la fila para dispositivos con pantallas iguales o mas grandes que  576px de ancho, cuando el tamaño de la pantalla se hace menor a este tamaño, los elementos se apilan en linea.
+
+Este seria el codigo para los dispositivos con pantalla extra pequeña
+
+    <div class="row">
+      <div class="col-3">.col-3</div>
+      <div class="col-3">.col-3</div>
+      <div class="col-3">.col-3</div>
+      <div class="col-3">.col-3</div>
+    </div>
+
+Para los dispositivos medianos
+
+    <div class="row">
+      <div class="col-md-3">.col-md-3</div>
+      <div class="col-md-3">.col-md-3</div>
+      <div class="col-md-3">.col-md-3</div>
+      <div class="col-md-3">.col-md-3</div>
+    </div>
+
+Finalmente para los dispositivos grandes
+
+    <div class="row">
+      <div class="col-lg-3">.col-lg-3</div>
+      <div class="col-lg-3">.col-lg-3</div>
+      <div class="col-lg-3">.col-lg-3</div>
+      <div class="col-lg-3">.col-lg-3</div>
+    </div>
+
+Y los dispositivos mas grandes 
+
+      <div class="row">
+      <div class="col-xl-3">.col-xl-3</div>
+      <div class="col-xl-3">.col-xl-3</div>
+      <div class="col-xl-3">.col-xl-3</div>
+      <div class="col-xl-3">.col-xl-3</div>
+    </div>
+
+Finalmente se puede apreciar el funcionamiento del sistema de grid desde la configuracion para el dispositivo mas pequeño hasta el dispositivo xl o extra grande.
+
+Al disminuir el tamaño de la pantalla gradualmente, el bloque de codigo con las clases xl cuando llega a cierto punto, los elementos se encolan o se enlistan de manera vertical. Los elementos estan alineados horizontalmente segun lo deseado hasta los 1200px exactamente, pero cuando la pantalla llega a un minimo de 1119px los elementos se encolan.
+
+Cuando se sigue haciendo mas pequeña la pantalla, la siguiente fila con los elementos lg o grandes se mantiene horizontal hasta los 992px exactamente, cuando baja a 991px inmediantamente los elementos se apilan verticalmente.
+
+Cuando se llega a un minimo de 767 pixeles se va a apilar al dispositivo mediano o md. Ya que el minimo es 768px Cuando se sigue haciendo mas pequeño el tamaño de pantalla y se simula un dispositivo pequeño, sm, el limite hasta donde llegan los elementos alineados horizontalmente es 576px, cuando llega a menos de esto se va a apilar para los dispositivos pequeños. En teoria para los elementos extra pequeños se deberian apilar los elementos en menos de 576px, pero esto no sucedio, parece que estos elementos no se apilan.
+
+Para el resto de los elementos han sido apiladas las columnas, se convirtieron en filas, aunque siguen siendo columnas tienen un comportamiento responsivo a los tamaños de la pantalla. La razon para esto es que muchas veces es necesario apilar el contenido cuando se sta usando un dispositivo movil para que las personas puedan hacer scroll arriba y abajo y la experiencia de usuario sea buena. Ya que esta es la manera de acceder a contenido en dispositivos moviles.
+
+Esta es la mejor parte de bootstrap, su grid responsive y estos fueron los basicos del grid.
 
 
 
