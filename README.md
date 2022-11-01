@@ -497,10 +497,50 @@ O haciendo que ocupe todo el tamaño de viewport disponible
 
 
 ## 30. 9-Alerts
+Son elementos que proveen de mensajes de retroalimentacion contextual para las acciones tipicas de los usuarios. Estan disponibles para cualquier dimension de texto
+
+    <div class="alert alert-success" role="alert">
+      This is a success alert—check it out!
+    </div>    
+    
+Tambien es posible agregar un link al mensaje de alerta
+
+    <div class="alert alert-primary" role="alert">
+      This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+
+Las alertas aceptan alguno de los 8 estilos cotextuales vistos anteriormente
+
 
 ## 31. 10-Buttons
+Los botones pueden aplicar los diferentes estlos y usarse para acciones en formularios, dialogos y mas, soportando diferetnes tamaños estados y mas. Tienen a disposicion las 8 clases contextuales
+
+    <button type="button" class="btn btn-secondary">Secondary</button>
+
+Tambien estan los mismos botones con estilos outline
+
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+Tambien es posible darle a un elemento link o input el estilo de los botones, dandole las clases de los botones.
+
+      <a class="btn btn-primary" href="#" role="button">Link</a>
+
+
+
 
 ## 32. 11-Button Groups
+Bootstrap permite agrupar botones en una sola linea y darles poderes con JS. Se crea una clase btn-group en un div donde agrupa varios botones
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Left</button>
+      <button type="button" class="btn btn-secondary">Middle</button>
+      <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+
+Hay varios usos con los grupos de botones. es posible agrupar botones y otros tipos de buttons dentro del grupo. Tambien es posible agregar grupos de botones dentro de otros grupos para formar secciones separadas.
+
+Es posible tambien cambiar el tamaño de los grupos con la clase contextual ```btn-group-lg``` para crear un grupo grande, y la notacion sm para los pequeños.
+
 
 ## 33. 12-Badges
 
