@@ -356,6 +356,36 @@ https://getbootstrap.com/docs/4.0/content/typography/
 
 
 ## 26. 5-Colors
+Bootstrap tiene ciertas clases que se pueden agregar como contexto a otras y aplicar color. Hay varias clases en bootstrap para la aplicacion del color.
+
+Texto normal      ```<p>Este es un texto normal</p>```
+
+text muted      ```<p class="text-muted">Este texto esta muteado</p>```
+
+primary text      ```<p class="text-primary">Este es un texto primario</p>```
+
+success text      ```<p class="text-success">Este es un texto exitoso</p>```
+
+info text      ```<p class="text-info">Esto es informacion</p>```
+
+text warning      ```<p class="text-warning">Esto es una advertencia</p>```
+
+danger text      ```<p class="text-danger">Esto es peligro!</p>```
+
+secondary text      ```<p class="text-secondary">Este es secundario</p>```
+
+white text      ```<p class="text-white bg-dark">Esto es blanco</p>```
+
+dark text      ```<p class="text-dark">Esto esta en negro</p>```
+
+text body      ```<p class="text-body">Esto es cuerpo</p>```
+
+text light      ```<p class="text-light bg-dark">Esto es light</p>```
+
+Estos estilos para los colores tambien incluyen soporte para el hover y los links.
+Las clases contextuales permiten agregar estilos en conjunto con otras y tambien funcionan bien para anchos completos y hover sobre links.
+
+Tambien se pueden usar para botones, fondos, etc. Las clases contextuales se usan para crear colores representativos e importantes.
 
 ## 27. 6-Tables
 
