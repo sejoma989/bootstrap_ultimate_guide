@@ -312,8 +312,48 @@ Para el resto de los elementos han sido apiladas las columnas, se convirtieron e
 Esta es la mejor parte de bootstrap, su grid responsive y estos fueron los basicos del grid.
 
 
-
 ## 25. 4-Typography
+Bootstrap para la tipografia usa por defecto una fuente de 16px y lel tamaño de la linea es 1.5, el tipo de letra por defecto es **Helvetica, new Helvetica, aerial y sans serif** 
+
+Los elementos de parrafo tienen ```margin-top=0``` y ```margin-bottom=1m (16px)```  por defecto.
+
+Los elementos de titulo tienen todos diferentes pesos y tamaños segun su importancia
+
+h1 - 2.5em o 40px <br>
+h2 - 32px <br>
+h3 - 28px <br>
+h4 - 24px <br>
+h5 - 20px <br>
+h6 - 16px
+
+Tambien es posible agregar el estilo de un titulo a un elemento parrafo, cuando no sea posible modificar la estructura html, por ejemplo:
+
+    <p class="h1">Parrafo como titulo</p>
+
+Por defecto estos son los tamaños de los titulos, sin embargo a las tipografias se les pueden agregar clases para modificar su visualizacion. 
+
+Por ejemplo se puede agregar un titulo que tiene un texto secundario atenuado 
+
+    <h3>
+      Fancy display heading
+      <small class="text-muted">With faded secondary text</small>
+    </h3>
+
+
+Si se agrega la clase display, es posible darle mas peso al texto. En el caso de los titulos se puede incrementar su tamaño para cuando sea necesario llamar la atencion
+
+      <h1 class="display-1">Titulo 1</h1>
+      <h2 class="display-2">Titulo 2</h2>
+      <h3 class="display-3">Titulo 3</h3>
+      <h4 class="display-4">Titulo 4</h4>
+      <h5>Titulo 5</h5>
+      <h6>Titulo 6</h6>
+
+Hay muchas otras opciones para estilizar no solo los titulos sino tambien los parrafos y cualquier otra tipografia, esta en el siguiente link de la documentacion
+
+https://getbootstrap.com/docs/4.0/content/typography/
+  
+
 
 ## 26. 5-Colors
 
