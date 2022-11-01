@@ -620,22 +620,209 @@ Tambien es posible agrupar barras de progreso para ver por ejemplo el porcentaje
 
   
 ## 35. 14-Spinners
+Los spinners son como loaders o indicadores de que algo un recurso o una pagina se esta cargando. 
+Se aplica usando la clase .spinner-border. Por temas de accesibilidad siempre el loader incluye **role="status"** y un div interno **<span class="sr-only">Loading...</span>**
 
+    <div class="spinner-border text-muted" role="status"><span class="sr-only">Loading...</span></div>
+
+Hay diferentes colores en la clase util de colores. 
+Hay otro tipo de spinner que es el growing spinner
+
+    <div class="spinner-border text-light bg-dark" role="status"><span class="sr-only">Loading...</span></div>
+
+
+Hay otro tipo de spinner que se puede insertar dentro de un boton
+
+    <button class="btn btn-primary" type="button" disabled>
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      Loading...
+    </button>
 
 
 ## 36. 15-Pagination
+La paginacion permite  mostrar paginacion par aindicar una serie de contenido relacionado existente entre multiples paginas.
+La paginacion pérmite que un registro con miles de filas, pueda ser cargado por partes, comenzando por sus primeros 50 registros, y permitiendo ir con los proximos 50 y asi sucfesivamente.
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+La paginacion permite tener bloques conectados usando links. Se le agrega un nav aria-label para indicarkle a los navegadores una etiqueta que e una barra de navegacion
+
 
 ## 37. 16-List Groups
+Son un flexible componente para mostrar series de un determinado contenido, se permite modificar y extender para soportar casi que cualquier contenido dentro.
+La mas basica es una lista sin ordenamiento donde cada item tiene su clase. A un elemento se le puede asignar la etiqueta de clase **active** para mostrar que es el elemento seleccionado en la lista o **disabled** para iondicar que no es un elemento dispónible
+
+    <ul class="list-group">
+      <li class="list-group-item active">An item</li>
+      <li class="list-group-item disabled">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+
+Tambien se pueden listar links y botones para creqar items de listas accionables con hover, tambien aplican active y disabled con las clases **.list-group-item-action** 
+
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        The current link item
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+      <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+    </div>
+
+  Tambien a los items de la lista es posible aplicar clases contextuales
+
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A fourth link item</a>
 
 ## 38. 17-Cards
+Las tarjetas de bootstrap proveen un flexible y ext4ndible contenedor de contenido con multiples variantes y opciones.
+Tiene opciones de agregar headers y footers y una gran variedad de contenido, colores de fondo contextuales, y poderosas opciones de display.
+Umn ejemplo de uso seria al agregar el grupo de trabajo para una pagina web. Una tarjeta basica seria.
+
+    <div class="card">
+      <div class="card-body">
+        This is some text within a card body.
+      </div>
+    </div>
+
+Un ejemplo de tarjeta mas compuesto que contiene imagen titulo y un link seria
+
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
 
 ## 39. 18-Dropdowns
+permite crear elementos contextuales que desplegan listas de links y mas contenido usando bootstrap. Son modificables y son interactivas usando JS, se disparan al clickearse, no al hacerse hover.
+Un simple boton puede volverse un dropdown asi, igualmente que sucede con un link
 
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+Se puede hacer con cualquier tipo de boton
+
+  
 ## 40. 19-Collapse
+Permite activar o desactivar la visualizacion de un contenido, los botones y anchos son usados como disparadores que son mapeados a especificos elementos que se quieren mostrar. Colaprsar un elemento va a animar su altura hasta 0. En el siguiente caso hay un link y un boton que permiten activar o desactivar la funcinoalidad de un mismo texto collapse
+
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+
+Tiene muchas variantes, en donde se puede desplegar diferente contenido para varios botones en linea.
+
 
 ## 41. 20-Navs
+Navs o navigation son la clave para mudchos sitios web. la navegacion es una manera de navegar y explorar en el website. El nav mas basico no incluye estilos, 
+
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+
+Los estilos disponibles pueden ser: 
+
+Alineacion horizontal centrada, agregando la clase contextuial a la clase nav: **justify-content-center**
+Con la variante de que no sea center sino end para llvar hasta el final
+
+un nav de posicion vertical con la clase contextual: **flex-column**
+
+Hay otros estilos como **nav-pills** que modifican el estilo del elemento.
+
+Tambien hay una propiedad que se puede agregar a las anteriores **nav-fill** que permite extender el nav por todo lo disponible de la etiqueta padre, o tambien editar las navvar para que se vuelvan pestalas con nav-tabls.
+
+Son muy usados para crear submenus, mas adelante el navbar va a mostrar como hacer un menu principal
+
 
 ## 42. 21-Navbar
+Este es un elemento navigation que se ubica como header en la parte superior de la pagina. Es el elemento mas usado para la navegacion en las paginas y sirve como un indice para la pagina
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+Por defecto el navbar se comporta de forma responsiva para pantallas desde rtamaño pequeño, asiq ue para las pantallas lg y xl se comprimer el contenido del navbar. E sposible cambiar el color y el estilo de la barra con clases contextuales
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+
+
 
 ## 43. 22-Forms
 

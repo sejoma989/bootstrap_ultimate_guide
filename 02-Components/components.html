@@ -280,13 +280,177 @@
     <br><br><br><br>
 
     <!-- 14.Spinners -->
-    <div class="spinner-border text-primary" role="status">
+    <div class="spinner-border text-muted" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-success" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-info" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-warning" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-danger" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-secondary" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-dark" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-border text-light bg-dark" role="status"><span class="sr-only">Loading...</span></div>
+
+    <div class="spinner-grow text-primary" role="status">
       <span class="sr-only">Loading...</span>
     </div>
 
+    <button class="btn btn-primary" type="button">
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      Loading...
+    </button>
+    <br><br><br><br>
 
+    <!-- 15.Pagination -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <br><br><br><br>
+    <!-- 16-List Groups -->
+    <ul class="list-group">
+      <li class="list-group-item active">An item</li>
+      <li class="list-group-item disabled">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+
+    <br><br>
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        The current link item
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A fourth link item</a>
+      <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+    </div>
 
     <br><br><br><br>
+    <!-- 17-Cards -->
+    <div class="card">
+      <div class="card-body">
+        <h1>John Doe</h1>
+        <h4>CEO</h4>
+      </div>
+    </div>
+
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXwBFRcXHhoeOyEhO3xTRlN8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fP/AABEIAIIAhAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAABAECAwUGB//EADQQAAEEAQMDAgQEBAcAAAAAAAEAAgMRBBIhMQVBURNxIjJhsUJikaEUFYHRBiMkUnLB4f/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAZEQEBAQEBAQAAAAAAAAAAAAAAAQIRMUH/2gAMAwEAAhEDEQA/AEQrhVC0HsggcpyAbJUDdPYzbCqY107KS34QtNKsW/Cskm5nKzxM7GyH+nHINfYHa/ZMyj/Kk/4n7LybIKx2P47g2iQvWlijSk+j5/8AGQmKY3PHyf8AcPK6OlRY6VUtW+lQQhFy1Vpblqo5qkyIUK5CghIUQpQpEG2tG2sgtWBbYaBqfxRskmhP4oVTDFKSPhVqQ75UEnlnTizu8Ru+y4UDNWK1oA3Hdd3NaDh5AJq43fZczHbC9gcCCW8tut0QuSHy4GXHO0bg8eR3C9fE9k0TJYzbHgEFeRz36yTpA/6W3S+sSYjWxOp0fNHsmwdeppRSzizcaVoIlaCRdHZah7HfK9p9isNKEJfLyIsSEyzu0t7eSfAWuZlw4URkld7NHJXkcvKl6hkepId+zRw0JkFMZXVcjKOmImGPw0/EfcpeB88OXCdbzqeAQXE3a0ixnMcNY2KYjDX9RxA0WA6/0BWk7JG6FJ5Qskg2lswDwsGWt2krbDZteE7jJEEp3GUobQflQg/KVkub1dxZ06cjwPuuLBkMhxTY07fC4dyup11zjhmFnMhonwF5vIDmMbGTYHCcq1lkTmR5JJNrOMEkbWrNjs78+EwNDWXVEHZbFPOYQPg7Ks83oNc0up1cBYjMc2Ou4S8jzLu7ko5BOsHzSSGnvc48WTwExiAa/mLTextKEUVvDI2tMgGn23UXdexxxnbAk1RHdZ9MgLuoOkcb9Nm/0J4/a0u7JBwtHqE1xXjyul0Rn+hdIRRe79a2/ujRhooUkboXNpz2BbtA8rBnstmUujDUccpzHSYATWPypHeyPwlA4QO6yXnuqzasws7NbW3lcswvMw0297uLTfU3D+ZSGqA2S3qSxyepH8YPa1qeC+qZ+BkYhBlZXkjhLRgvcAu7/NMfNhkE+O71ywtuxp/84C4kTgxwcjNv01OSz0qHdYB9HdbZD/VcCU50jpjM31XSOosFtZe7k28Ec4sLxZUMjJdS7uZgwQ4oq2zg8A/ra5jGaTrsavoqXqrGaaRkIi0kAXuvXwRthxIWMFNDAvNu0ylrXAbkBepLQxoaOAKCNGMTyhB5QsNOcxbNtKDIhb+O/ZaNzYfzfotsHBdJnH5C5v8AHRfm/RaxdThYRYcpO0OEDukWdXxTyXD+iseqYgBOsk+A1Bee6pYzZT+ZZRTCuAfO/Ct1XIZNmue0FoI/VYQ7usA15pbgrZ0bfSeYyA53I8LCKHVGbW0jWseCHcnxwrRzNYzTIwOLfl0nlSc91lxDRdJmTU4No1QrbZXbVmUNAc/8J7LSzVOoAqHS/pG61n62VcABp07jys3lzXefFoDyAbG6UmK3ZUYHGsfdeukXlMV1ZEQuvjH3XqpCbWNNRkeUKpO6Fhp5kOAVmytPy8JN8ioHldGT/qgGjsr6xV8rnB1kJyCLUApGGuJFq4se6qHBpr91YEWLKE507neoRwojm0O1buryVOWKld7pYlaB4TsedXhFue15aBQ7/wBkgDRu6TDckDnZSMtkDmi68KzpQPxbD6lImUE/Dt9VHqEtomyP3UG75ADQJB5orJzvN2s9QO3ZF9u32UmrHEPaQe9gr2+FN/E4UcjtOqqNLwQNGwvQf4fzNMhhcNn8b8FZ01HfIF8IQeULDT58Si1CF0Y6ZxY/UdvwuiHNa3SKCSxwWx7bWtR9aKi2vU7utXVHFsaP1WbGtYNTzslZ8guJDTTUJlO/W4pcq7jaoUpChShIQpUIUEqb7qqFJZN4Mhjnje27DgkrTeEC6aNo7uCKY9xaFB22QuTb54mIIr+Jw9gsom6nBOtpo9l1c1ydqAtQ1wYCXlLSzOJoGh9FiXE8lTRibJ17NFBL6j5UIUBqRaKUJSVCEKAUoUIIQhCQAN12Og4/q5gceIxq/quQ3lev6VAyHEj0/M4W4/VZ1WpHR5QqOlDTSFhp4aBbu+RCFtiFyqlCElChCFBKEISkKTw1ShQQoQhRChCFBrjC8iMHcagvbQgCNtCtkIXPTeS8xPqHdCEIL//Z" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <!-- 18-Dropdowns -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <br><br><br><br>
+    
+    <!-- 19-Collapse -->
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- 20-Navs -->
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <br><br><br><br>
+    <!-- 21-Navbar -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    22-Forms
+    23-Inputs
+    24-Input Groups
+    25-Custom Forms
+    26-Carousel
+    27-Modal
+    28-Tooltip
+    29-Popover
+    30-Toast
+    31-Scrollspy
+    32-Utilities
+    33-Flex
+    34-Icons
+    35-Media Objects
+    36-Filters
+
 
 
     
