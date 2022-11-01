@@ -543,10 +543,85 @@ Es posible tambien cambiar el tamaño de los grupos con la clase contextual ```b
 
 
 ## 33. 12-Badges
+Los badges o insignias permiten agregar informacino a cualquier contenido, se usa junt cun una clase contextual como una insignia secundaria. 
+Los badges cambian con el tamaño del contexto 
+
+    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+Pueden ser parte de links o botones para llevar contadores
+
+
+    <button type="button" class="btn btn-primary">
+      Notifications <span class="badge badge-light">4</span>
+    </button>     
+
+Se pueden aplicar clases contextuales a cada uno
+    
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
+
+Tambien se les puede cambiar el estilo a las insignias
+
+    <h6>Example heading pill<span class="badge badge-pill badge-info">New</span></h6>
+
+
+Las etiquetas se pueden convertir en links por si mismas al pasar el raton por encima mostrar este comportamiento
+
+    <a href="#" class="badge badge-primary">Primary</a>
+
+Las 8 herramientas contextuales permiten describir el mensaje segun el estado o el tema que se quiere manifestar, en caso que las etiquetaas de danger, warning info o alguna de las otras no manifieste lo que se quiere mostrar, siempre sepuede editar con CSS.
+
+Bootstrap permite agilizar el desarrollo para los que se enfocan en crear contenido. En caso de una necesidad de creacion rapida y robusta de contenido es posible tomar plantillas que sean basicas como templates, y luego agregarles contenido combinando bootstrap con PHP.
+Por ejemplo es posible crear una plantilla que permita implementar 10 sitios web por semana. Se creauna plantilla que sea gratuita y estructurada para una pagina basica. Luego obtener el conenido, posteriormente tomar las fotos, agergar un cabecero y luego agregar el contenido cuando ya este completado.
+Siempre hay que construir webs pensando en las personas que van a venir despues a usar el codigo que se esta creando.
+Lo que se peude hacer es construir equemas de colores personalizados para cada cliente, asi como el contenido, pero lo fundamental en el backend es practicamente lo mismo.
+
+
 
 ## 34. 13-Progress Bars
+Permiten ver un progreso de cuanto se ha avanzado en alguna tarea o cuan lejos se encuentra un proceso de ser creado.
+No se usa la etiqueta HTML ```<progress>``` se usa por el contrario una clase de bootstrap que se construye con html y css que permite organizar algunos atributos de la barra de progreso.
+Se usa el elemento .progress como un contenedor para indicar el balor maximo de la barra de progreso
+Se usa un contenedor interno .progress-bar para indicar el progreso hasta eñ momento
+Requiere un estilo inline, clase de utilidad o algun CSS customizado para darle su ancho como porcentaje de anchura.
+El elemento *.progress-bar* tambien requiere un atributo **role** y un **aria** para hacerlo accesible.
+Si se agrega texto dentro de la variable sirve como label o etiqueta
 
+    <div class="progress" style="height: 20px;">
+      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div> 
+    </div>
+
+Es posible agregar las clases utiles de los colores como **bg-success**
+
+    <div class="progress" style="height: 20px;">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div> 
+    </div>
+
+Tambien es posible animar la barra y darle una apariencia rayada con las clases contextuales**progress-bar-striped progress-bar-animated"**
+
+Tambien es posible agrupar barras de progreso para ver por ejemplo el porcentaje de almacenamiento en un disco segun el procentaje del tipo de archivos. A cada una de las barras se les puede dar un estilo personalizado con clases utiles y contextuales, sin embargo al altura va a ser la que se define en la calse contenedor **progess**
+
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+  
 ## 35. 14-Spinners
+
+
 
 ## 36. 15-Pagination
 
