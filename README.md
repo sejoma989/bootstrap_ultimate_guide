@@ -881,31 +881,222 @@ La mayoria de gente se guia mas facil cuando los inputs tienen iconos. El siguie
     </div>
 
 
-
 ## 46. 25-Custom Forms
+Los input-grups permiten tambien crear selectores personalizados y tambien entradas de archivo pesonalizadas
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
 
 ## 47. 26-Carousel
+EL componente carrusel permite mostar de manera ciclica imagenes o presentaiones de texro, como un carrusel. Es un elemento muy usado en muchas paginas. Los data targets permiten agregar indicadores. La clase carousel-item active permite agregr uno de los slides o imagenes que se van a mostrar. Finalmente la clase carousel-control-prev y -next crea las flechas a los lados
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <    <div class="carousel-item active">
+          <img src="https://www.hospitalveterinariglories.com/wp-content/uploads/2022/09/14-09-22-Todo-sobre-el-gato-calico%CC%81.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://image.shutterstock.com/shutterstock/photos/1765073558/display_1500/stock-photo-curious-calico-cat-walking-outside-predator-in-the-autumn-garden-1765073558.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cf.ltkcdn.net/cats/images/std/242113-800x533r1-black-orange-white-calico-cat.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
 
 ## 48. 27-Modal
+Los modales agregan cajas de dialogo al sitio para lightboxes, notificaciones de dusuario o contenido completamente custom.
+Los modales s econstruyen con HTML, CSS y JavaScript. Se posicionan sobre el resto de la pagina y remueve el scroll del body encima se pone el modal.
+
+Solo se admite una alerta a la vez, no es posible concatenarlas, por temas de experiencia de usuario. Se despliega al dar click a un boton
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+      Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+          </div>    
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 ## 49. 28-Tooltip
+Los tooltips son pequeñas cajas informativas de texto que aparecen como pop-ups cuando se pone el mouse por encima.
+Es una manera de dar informacion a las personas de tipo experiencia de usuario.
+
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+      Tooltip on left
+    </button>
+
+Tambien se puede agregar a un link
+
+    <!-- HTML to write -->
+    <a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+      
+    <!-- Generated markup by the plugin -->
+    <div class="tooltip bs-tooltip-top" role="tooltip">
+      <div class="arrow"></div>
+      <div class="tooltip-inner">
+        Some tooltip text!
+      </div>
+    </div>
+
+
 
 ## 50. 29-Popover
+Un popover es similar al tooltip, en teoria permite añadir mas informacion, sin embargo en la practica parece que es similar al tootltip
+
+    <a href="#" data-toggle="popovver" title="Popover Header" data-content="Some text inside the popover">Hover over popover</a>
+
+
 
 ## 51. 30-Toast
+SOn notificaciones push que llegan a los usuarios, sin embargo no parece que est funcionando
+
 
 ## 52. 31-Scrollspy
+Los scrollspy permiten actualizar automaticamente barras de navegacion o componentes list-group basados en la posicion del scroll en la pantalla a la cual corresponda el link activo en el viewport.
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#fat">@fat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mdo">@mdo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#one">one</a>
+            <a class="dropdown-item" href="#two">two</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#three">three</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <h4 id="fat">@fat</h4>
+      <p>...</p>
+      <h4 id="mdo">@mdo</h4>
+      <p>...</p>
+      <h4 id="one">one</h4>
+      <p>...</p>
+      <h4 id="two">two</h4>
+      <p>...</p>
+      <h4 id="three">three</h4>
+      <p>...</p>
+    </div>
+
 
 ## 53. 32-Utilities
+Las clases utilities son bastantes, permiten agregar o quitar elementos como bordes ```class="border"``` es un ejemplo de una clase utility. 
+Se vieron ejemplos previos con los colores ```class="text-primary"``` que permitian cambiar el color a elementos.
+
+    <div class="bg-info clearfix">
+      <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+      <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+    </div>
 
 ## 54. 33-Flex
+Flex es una utilidad de bootstrap que permite manejar el layout el alineamiento, el tamaño de la plantilla, columnas, navegacion, componentes y mas utilidades responsivas de flexbox. Puede ser necesario agregar codigo CSS para acomodaciones muy complejas.
+Permite acomodar los elementos de manera rapida, es una gran diferencia comparado a bootstrap3, que ahora se usa display-flex y antes se usaban box.
+
+Usando la propiedad display que es una utilidad para cerar un contenedor flexbox para transformar elementos hijos directos en items flex. Para aplicarla en el contenedor padre se pone **.d-flex** y **.d-inline-flex**
+
+    <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+    <div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+
+
+Tambien estan las variantes responsivas: 
+
+- .d-sm-flex
+- .d-sm-inline-flex
+- .d-md-flex
+- .d-md-inline-flex
+- .d-lg-flex
+- .d-lg-inline-flex
+- .d-xl-flex
+- .d-xl-inline-flex
+
+Se puede dar una direccion a los items y tambien ponerlos en columna
+```.flex-row``` para la organizacino horizontal de izquierda a derecha, por defecto o ```.flex-row-reverse``` para que los elementos comiencen de derecha a izquierda. Lo mismo sucede para las columnas ```.flex-column```  y ```.flex-column-reverse```
+
+Tambien es posible justificar el contenido 
+
+    <div class="d-flex justify-content-start">Flex justificado</div>
 
 ## 55. 34-Icons
+Para el manejo de iconos bootstrap tiene una libreria propia, sin embargo se aconseja a usar librerias externas. Font awesome es recomendada, sin embargo la mas utilizada es material icons.
+
+https://fonts.google.com/icons
+
+Las instrucciones son sencillas, se importa en el head
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+Y luego se usan donde se necesiten 
+
+    <span class="material-symbols-outlined">
+      bolt
+    </span>
+
 
 ## 56. 35-Media Objects
+Los media objects permiten una manera facil de alinear elementos multimedia como imagenes o videos en conjunto con el contenido. Es una manera de construir componentes que representan elementos como comentarios de blog, tweets y el like.
+
+    <div class="media">
+      <img src="http://www.i2clipart.com/cliparts/e/7/0/3/clipart-sleepy-calico-cat-256x256-e703.png" width="64px" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+      </div>
+    </div>
+
+
 
 ## 57. 36-Filters
-
+En bootstrap no hay un componente para filtrar, por lo que hay que construir el elemento, Por ejemplo en una tabla se quiere filtrar que es algo muy comun. Para esto sw 
 
 
 
