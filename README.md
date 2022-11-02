@@ -823,12 +823,64 @@ Por defecto el navbar se comporta de forma responsiva para pantallas desde rtama
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
 
-
 ## 43. 22-Forms
+Los formularios en bootstrap como casi todos los elementos son expandidos usando clases. Sin embargo la etiqueta form principal no se aplica ninguna clase, se aplican las clases al grupo que pertenece a cada elemento del input. Es necesario usar la clase **form-group** para indicar que se quiere usar el estilo bootstrap para los formularios.
+Es necesario verificar que los campos tengan el **type** adecuado. Los grupos de campos pueden contener label, input y tambien un small que permite agregar una leyenda bajo un campo
+
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+Los forms son elementos muy personalizables y se puede ver en la documentacion de bootstrap.
 
 ## 44. 23-Inputs
+bootstrap permite extender los estilos de los elementos de HTML, para este caso los inputs, usando la clase **form-group**, que por lo general va dentro de un form, o a veces no. Esta tiene una seccion de label y un textarea para comentarios
+
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <textarea class="form-control" name="name" id="comment" cols="30" rows="10"></textarea>
+    </div>
+
+Tambien es posible agregar listas de opciones
+
+    <div class="form-group">
+      <label for="sell">Select list</label>
+      <select class="form-control" id="sell">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+
 
 ## 45. 24-Input Groups
+Es posible combinar etiquetas input para extender las fuucniones de un campo, agregando texto, botones, grupos puntuales de inputs de texto por defecto, selectores personalizados y entrada personalizada de archivo.
+La mayoria de gente se guia mas facil cuando los inputs tienen iconos. El siguiente input group permite mostrar un arroba para indicar un username
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+
 
 ## 46. 25-Custom Forms
 
