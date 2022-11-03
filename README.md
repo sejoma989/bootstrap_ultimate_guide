@@ -989,7 +989,7 @@ Un popover es similar al tooltip, en teoria permite añadir mas informacion, sin
 
 
 ## 51. 30-Toast
-SOn notificaciones push que llegan a los usuarios, sin embargo no parece que est funcionando
+SOn notificaciones push que llegan a los usuarios, sin embargo no parece que est funcionando, solo se mantienen por cierto momento
 
 
 ## 52. 31-Scrollspy
@@ -1158,19 +1158,117 @@ La manera mas basica, aunque es responsiva, no hace que se apilen los elementos
     </div>
 
 ## 60. Stacked/Horizontal
+Esta priopiedad del grid permite acomodar todos los bloques de manera vertical para dispositivos pequeños para luego volverse horizontal en dispositivos mas grandes.
+Para el siguiente ejemplo, es ta clase para los devices pequeños, por lo que para que aparezcan encolados de manera horizontal, el dispositivo debe ser menor a 576px de ancho
 
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-8">col-sm-8</div>
+          <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+        </div>
+      </div>
 
 
 ## 61. Grid XSmall
+Un ejemplo para la clase Xsmall, muestra que esta clase apila los elementos solo cuando el viewport esta por debajo de 120px
+
+      <h1 class="text-center">03. Grid Xsmall</h1>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-success">
+                <p>Este es algo de texto para Xsmall</p>
+            </div>
+            <div class="col-9 bg-warning">
+                <p>Esto es mas texto par Xsmall</p>
+            </div>
+        </div>
+      </div>
+
+
 ## 62. Grid Small
+Un ejemplo para la clase smal o sm que es la primera en donde se apilan los elementos por debajo de 576px en el viewport seria
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 bg-success">
+                <p>Este es algo de texto para Xsmall</p>
+            </div>
+            <div class="col-sm-9 bg-warning">
+                <p>Esto es mas texto par Xsmall</p>
+            </div>
+        </div>
+    </div>
+
+
 ## 63. Grid Medium
+Para la clase medium a la que pertenecen los dispositivos que estan por debajo de viewports de 768-px, un ejemplo 
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-success">
+                <p>Este es algo de texto para medium</p>
+            </div>
+            <div class="col-md-9 bg-warning">
+                <p>Esto es mas texto par medium</p>
+            </div>
+        </div>
+    </div>
+
 ## 64. Grid Large
+Para el ejemplo del viewport largo lg, se va a hacer un caso diferente, se tienen 25 de porcentaje para dispositivos extrapequeños y pequeños, 50% para los medium devices y 33.66 para los largos
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4 bg-primary">
+                <p>Este es algo de texto para .col-sm-3 .col-md-6 .col-lg-4</p>
+            </div>
+            <div class="col-sm-9 col-md-6 col-lg-8 bg-warning">
+                <p>Esto es mas texto para col-sm-9 col-md-6 col-lg-8</p>
+            </div>
+        </div>
+    </div>
+
 ## 65. Grid XLarge
+Para los dispositivos extralargos se va a aver un ejemplo similar al anterior, sin embargo para los dispositivos extralrgos un 20% y 80%, un ejemplo para el contenido desplegado en xbox series one.
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-primary">
+                <p>Este es algo de texto para .col-sm-3 .col-md-6 .col-lg-4</p>
+            </div>
+            <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-warning">
+                <p>Esto es mas texto para col-sm-9 col-md-6 col-lg-8</p>
+            </div>
+        </div>
+    </div>
+
+
 ## 66. Grid Examples
+Otra propiedad importante de ver es el offset, permite mover columnsa a la izquierda usando .offset-md-* mueve a col-md-4 por sobre 4 columnas
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-md-6 bg-info">.col-sm-5 .col-md-6</div>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 bg-danger">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6 bg-primary">.col-sm-6 .col-md-5 .col-lg-6</div>
+          <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 bg-secondary">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+        </div>
+      </div>
+
+    
 
 
 # Seccion 7, Reference
+Esta seccion es un repaso a la seccion 02.Componentes, todo se encuentra ahi
 
 # Seccion 8, Project
+
 
 # Seccion 9, Conclusion
