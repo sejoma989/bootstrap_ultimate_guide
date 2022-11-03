@@ -1266,9 +1266,23 @@ Otra propiedad importante de ver es el offset, permite mover columnsa a la izqui
 
 
 # Seccion 7, Reference
-Esta seccion es un repaso a la seccion 02.Componentes, todo se encuentra ahi
+Esta seccion es un repaso a la seccion 02.Componentes, todo se encuentra ahi 
 
 # Seccion 8, Project
+## 79. Overview
+La idea es crear un template que sirva para un 
 
+- Build Home Page
+- Build About Page
+- Build Services Page
+- Build Contact Page
+
+## 80. Build Home Page
+
+## 81. Build About Page
+
+## 82. Build Services Page
+
+## 83. Build Contact Page
 
 # Seccion 9, Conclusion
