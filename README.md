@@ -1099,8 +1099,75 @@ Los media objects permiten una manera facil de alinear elementos multimedia como
 En bootstrap no hay un componente para filtrar, por lo que hay que construir el elemento, Por ejemplo en una tabla se quiere filtrar que es algo muy comun. Para esto sw 
 
 
-
 # Seccion 6, Grid
+## 58. Overview
+
+- Grid System
+- Stacked/Horizontal
+- Grid XSmall
+- Grid Small
+- Grid Medium
+- Grid Large
+- Grid XLarge
+- Grid Examples
+
+## 59. Grid System
+El sistema grid de bootstrap permite usar un poderoso diseño mobile-first con diversos formas y tamaños gracias a un sistema de 12 columnas, 5 clases responsivas entre otras clases predefinidas.
+
+En bootstrap el sistema grid tiene 5 tipos de columnas:
+
+
+                        Max container width   Class prefix
+    Extra small   <576px	None (auto)           col-	
+    Small         ≥576px 		540px	              .col-sm-	
+    Medium        ≥768px	  720px             	.col-md-
+    Large         ≥992px	  960px	              .col-lg-
+    Extra large   ≥1200px   1140px              .col-xl-
+
+COn estos tamaños prederminados y admeas los limites de los tamañños de los contenedores  debe estar limitado tambien.
+
+El sistema grid determina algo de bootstrap para las reglas del sisteema de grid. las filas deben estar ubicados dentro de un .container que sea fixed o fluid con su alineacion, y las filas basicas ayudan a crear grupos horizontales de columnas.
+
+En contenido se debe ubicar dentrro de columnas y solo las colmunas qpueden ser inmediatamente hijas de las filas
+Las columnas a las que no se les ha especificado el ancho determinado se acomodan automaticamente en columna del mismo tamaño. Por ejmeplo cuatro instancias de .col-sm va a crear un ancho de 25% para cuatro columnas iguales en el breakpoint y superior.
+
+Las clases de la columna indican el numero de colu,mas que se quieren usar de las 12 posibles por fila. 
+Por ejemplo si se quieren 3 columnas iguales en toda la pantalla se puede usar .col-4
+
+El ancho de las columnas sempre esta organizado en porcentajes, asi que siempre estan en acomodacion relativa a su elemento padre de manera fluida y relativa
+
+Las columnas tienen padding gorizontal por edfecto, se puede quierta usando .no-glutters en .row
+
+En un div .container debe ir dentro una clase .row, y dentro van las columnas de esa fila en ese contenedor.
+
+La manera mas basica, aunque es responsiva, no hace que se apilen los elementos
+
+    <div class="container">
+        <h1 class="text-center">01. Grid System</h1>
+        <div class="row">
+            <div class="col-sm bg-info">
+                Una de tres columnas
+            </div>
+            <div class="col-sm bg-danger">
+                Dos de tres columnas
+            </div>
+            <div class="col-sm bg-info">
+                Tres de tres columnas
+            </div>
+        </div>
+    </div>
+
+## 60. Stacked/Horizontal
+
+
+
+## 61. Grid XSmall
+## 62. Grid Small
+## 63. Grid Medium
+## 64. Grid Large
+## 65. Grid XLarge
+## 66. Grid Examples
+
 
 # Seccion 7, Reference
 
