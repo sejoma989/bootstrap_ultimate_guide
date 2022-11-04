@@ -1290,9 +1290,14 @@ Sigue la seccion de features que permite ver atributos y finalmente una seccion 
 
 
 ## 81. Build About Page
+La pagina about es tambien informativa, luego de la navbar tiene un heading donde se tienen breadcrumbs, donde se tiene una imagen con texto y tambien la presentacion del equipo, los clientes, y eso estodo, muy simplista
+
 
 ## 82. Build Services Page
+La pagina de servicios tiene un breadcrumb para mostrar en donde esta y como regresa, un banner de toda la pantalla y tarjetas para cada servicio ofrecido
 
 ## 83. Build Contact Page
+Esta apgina contiene un breadcrumb, una llamada a la api de maps para ver la direccion del negocio, al lado derecho la informacion del negocio, en la parte de abajo se desplega un formulario para permitir la subida de datos
+
 
 # Seccion 9, Conclusion
