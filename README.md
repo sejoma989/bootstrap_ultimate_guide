@@ -1278,6 +1278,16 @@ La idea es crear un template que sirva para un
 - Build Contact Page
 
 ## 80. Build Home Page
+Teniendo en cuenta que Lo primero que se quiere construir es de arriba hacia abajo el **navigation** usando la clase **navbar**
+
+Posteriormente se crera el ```<header>``` que contiene dentro un slide de imagenes como carrusel.
+
+Luego se pone una seccion de marketing que va a permitir en unas tarjetas mostrar una seccion de marketing, puede mostear productos o ese tipo de elementos
+
+Posteriormente va una seccino de portafolio que usa tarjetas portafolio para agregar 6 cajas que permiten listar proyectos.
+
+Sigue la seccion de features que permite ver atributos y finalmente una seccion de llamado a la accion
+
 
 ## 81. Build About Page
 
